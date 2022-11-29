@@ -18,16 +18,16 @@ const Socials = () => (
 );
 
 const Div = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    gap: 1.2rem;
-    font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.2rem;
+  font-size: 1.5rem;
 
-    @media screen and (max-width: 600px) {
-      display: none;
-    }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export default Socials;

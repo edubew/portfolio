@@ -1,31 +1,31 @@
 import React from 'react';
-import styled from "styled-components";
-import { CgScrollH } from "react-icons/cg";
+import styled from 'styled-components';
+import { CgScrollH } from 'react-icons/cg';
 import Cta from './Cta';
 import Socials from './Socials';
 import winnie from '../../assets/winnie.png';
 
-const HeadLine = () =>(
-    <Header className="background">
-      <div className="container header__container">
-        <div className="profile__image">
-          <img src={winnie} alt="profile" />
-        </div>
-        <div className="name__container">
-          <h5>Hello, I am</h5>
-          <h1>Winfred Edube</h1>
-          <h5 className="text-light">Fullstack Developer</h5>
-
-          <Cta />
-          <Socials />
-
-          <a href="#contact" className="scroll__down">
-            <CgScrollH />
-            Scroll Down
-          </a>
-        </div>
+const HeadLine = () => (
+  <Header className="background">
+    <div className="container header__container">
+      <div className="profile__image">
+        <img src={winnie} alt="profile" />
       </div>
-    </Header>
+      <div className="name__container">
+        <h5>Hello, I am</h5>
+        <h1>Winfred Edube</h1>
+        <h5 className="text-light">Fullstack Developer</h5>
+
+        <Cta />
+        <Socials />
+
+        <a href="#contact" className="scroll__down">
+          <CgScrollH />
+          Scroll Down
+        </a>
+      </div>
+    </div>
+  </Header>
 );
 
 const Header = styled.header`

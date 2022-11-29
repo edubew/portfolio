@@ -9,7 +9,7 @@ const Cta = () => (
         Download Resume
       </a>
       <a href="#contact" className="btn btn-primary">
-        Let's Talk
+        Lets Talk
       </a>
     </div>
   </Div>
