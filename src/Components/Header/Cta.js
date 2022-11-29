@@ -1,6 +1,6 @@
 import React from 'react';
+import styled from "styled-components";
 import Resume from '../../assets/Resume.docx';
-import styled from 'styled-components';
 
 const Cta = () => (
   <Div>
