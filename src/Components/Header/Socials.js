@@ -22,6 +22,10 @@ const Socials = () => (
     margin-top: 1rem;
     gap: 1.2rem;
     font-size: 1.5rem;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   `;
 
 export default Socials;

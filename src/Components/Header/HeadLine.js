@@ -35,6 +35,15 @@ const Header = styled.header`
   padding-top: 7rem;
   overflow: hidden;
 
+  @media screen and (max-width: 1000px) {
+    height: 68vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 100vh;
+    padding-top: 3rem;
+  }
+
   .header__container {
     display: flex;
     gap: 2.5rem;
@@ -42,6 +51,10 @@ const Header = styled.header`
     text-align: center;
     height: 100%;
     position: relative;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column-reverse;
+    }
   }
 
   .name__container {
@@ -67,6 +80,14 @@ const Header = styled.header`
     transform: rotate(90deg);
     font-weight: 400;
     font-size: 1rem;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
   }
 `;
 
