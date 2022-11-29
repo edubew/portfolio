@@ -34,11 +34,11 @@ const Header = styled.header`
   overflow: hidden;
 
   @media screen and (max-width: 1000px) {
-    height: 68vh;
+    height: 80%;
   }
 
   @media screen and (max-width: 600px) {
-    height: 100vh;
+    height: 100%;
     padding-top: 3rem;
   }
 
@@ -66,6 +66,13 @@ const Header = styled.header`
     overflow: hidden;
     border-radius: 0.4rem;
     left: calc(25% - 11rem);
+
+    @media screen and (max-width: 600px) {
+      width: 80%;
+      margin: 2rem auto 4rem;
+      border-radius: 2rem;
+      background: linear-gradient(-180deg, var(--color-primary), transparent);
+    }
   }
 
   .scroll__down {

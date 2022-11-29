@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import winnie from "../assets/winnie.png";
+import React from 'react';
+import styled from 'styled-components';
+import winnie from '../assets/winnie.png';
 
 const About = () => (
   <Div>
@@ -33,6 +33,58 @@ const About = () => (
   </Div>
 );
 
-const Div = styled.div``;
+const Div = styled.div`
+  .about__container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+
+     @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr;
+      gap: 0;
+     }
+  }
+
+  .about__me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      var(--color-primary),
+      transparent
+    );
+    display: grid;
+    place-items: center;
+
+     @media screen and (max-width: 1000px) {
+      width: 50%;
+      margin: 2rem auto 4rem;
+     }
+
+      @media screen and (max-width: 600px) {
+        width: 65%;
+        margin: 0 auto 3rem;
+      }
+  }
+
+  .about__content {
+     @media screen and (max-width: 600px) {
+      text-align: center;
+     }
+    p {
+      margin: 2rem 0 2.6rem;
+      color: var(--color-white);
+
+       @media screen and (max-width: 1000px) {
+        margin: 1rem 0 1.5rem;
+       }
+        @media screen and (max-width: 600px) {
+          margin: 1.5rem 0;
+        }
+    }
+  }
+`;
 
 export default About;
