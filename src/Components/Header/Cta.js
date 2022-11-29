@@ -1,12 +1,12 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 import Resume from '../../assets/Resume.docx';
 
 const Cta = () => (
   <Div>
     <div className="cta">
       <a href={Resume} download className="btn">
-        Download Resume`
+        Download Resume
       </a>
       <a href="#contact" className="btn btn-primary">
         Let's Talk
