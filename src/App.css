@@ -80,6 +80,12 @@ a:hover {
   color: var(--color-white);
 }
 
+nav a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
+  box-shadow: 0 0 5px 4px var(--color-primary);
+}
+
 .btn {
   width: max-content;
   display: inline-block;
