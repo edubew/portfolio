@@ -22,7 +22,7 @@ const Skills = () => (
     <section id="skills">
       <h2>My Skills</h2>
       <div className="container skills__container">
-        <div className="languages__container">
+        <div className="general languages__container">
           <h3>Languages</h3>
           <div className="skills__content">
             <article className="skills__details">
@@ -85,7 +85,7 @@ const Skills = () => (
         </div>
 
         {/* frameworks */}
-        <div className="frameworks__container">
+        <div className="general frameworks__container">
           <h3>Frameworks</h3>
           <div className="skills__content">
             <article className="skills__details">
@@ -120,7 +120,7 @@ const Skills = () => (
         </div>
 
         {/* skills */}
-        <div className="skillset__container">
+        <div className="general skillset__container">
           <h3>Skills</h3>
           <div className="skills__content">
             <article className="skills__details">
@@ -151,20 +151,65 @@ const Div = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    transition: var(--transition);
 
-    div {
-      background: var(--color-bg-variant);
+     @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr;
+     }
+
+     @media screen and (max-width: 600px) {
+      gap: 1rem;
+     }
+
+    .general {
+      background: #00000b;
       padding: 2.4rem;
-      border-radius: 0.4rem;
-      border: 1px solid transparent;
+      border-radius: 1rem;
+      border: 1px inset transparent;
+      box-shadow: 0 3px 8px var(--color-primary);
+      transition: var(--transition);
 
       &:hover {
         background: transparent;
         border-color: var(--color-primary-variant);
-        cursor: default;
+        cursor: pointer;
       }
+
+       @media screen and (max-width: 1000px) {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+       }
+
+       @media screen and (max-width: 600px) {
+        width: 100%;
+        padding: 2rem 1rem;
+       }
     }
+
+    h3 {
+      text-align: center;
+      margin: 1rem;
+    }
+  }
+
+  .skills__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+     @media screen and (max-width: 1000px) {
+      padding: 1rem;
+     }
+  }
+
+  .skills__details {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .skills__icons {
+    margin-top: 8px;
+    color: var(--color-light);
   }
 `;
 
